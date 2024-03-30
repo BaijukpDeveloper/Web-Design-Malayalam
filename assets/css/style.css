@@ -1,1 +1,147 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/*global reset*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*fonts*/
+/*color shcema*/
+@use "../abstracts/variables";
+/*a function for color changing */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+/*seting animation*/
+.color-animation {
+  -webkit-transition: -webkit-animation ease 500ms;
+  transition: -webkit-animation ease 500ms;
+  transition: animation ease 500ms;
+  transition: animation ease 500ms, -webkit-animation ease 500ms;
+  -webkit-animation: color-change 10s infinite;
+          animation: color-change 10s infinite;
+}
+
+/*animation for color changing */
+@-webkit-keyframes color-change {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
+}
+@keyframes color-change {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@use "../abstracts/variables";
+@use "../abstracts/functions";
+/*button css */
+.btn {
+  padding: 0.3rem 0.9rem;
+  border-radius: 6px;
+  line-height: 1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #00B9E8;
+  -webkit-transition: background-color ease 0.5s !important;
+  transition: background-color ease 0.5s !important;
+}
+
+.btn-primary:hover {
+  background-color: #007FFF;
+  color: white !important;
+}
+
+@use "../abstracts/variables";
+@use "../abstracts/functions";
+/*header css start*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 10rem;
+  border-bottom: 1px solid rgba(201, 201, 201, 0.897);
+}
+
+.header .logo {
+  font-family: "Noto Sans Malayalam", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.header .navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar-menu-items {
+  margin-right: 1.5rem;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.header .navbar-menu-items:last-child {
+  margin-right: 0;
+}
+
+.header .navbar-menu-items a {
+  -webkit-transition: color ease 0.5s;
+  transition: color ease 0.5s;
+}
+
+.header .navbar-menu-items a:hover {
+  color: #00B9E8;
+}
+
+.header .navbar-menu-items a.active {
+  color: #00B9E8;
+}
+
+/* header css end */
+/*# sourceMappingURL=style.css.map */

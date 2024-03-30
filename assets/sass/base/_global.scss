@@ -1,0 +1,18 @@
+
+body{
+    font-family: $primary-font;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+/*seting animation*/
+.color-animation{
+    transition: animation ease 500ms;
+    animation: color-change 10s infinite;
+}

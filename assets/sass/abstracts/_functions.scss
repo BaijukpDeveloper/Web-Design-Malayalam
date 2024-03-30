@@ -1,0 +1,6 @@
+@use "../abstracts/variables";
+
+/*a function for color changing */
+@function get-colors($color : 'primary'){
+    @return map-get($theme-color, $color);
+};

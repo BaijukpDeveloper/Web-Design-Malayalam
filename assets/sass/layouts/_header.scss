@@ -1,0 +1,43 @@
+@use "../abstracts/variables";
+@use "../abstracts/functions";
+
+/*header css start*/
+.header {
+  .logo {
+    font-family: $malayalm-font;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem;
+  border-bottom: 1px solid rgba(201, 201, 201, 0.897);
+  .navbar {
+    &-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-items {
+        margin-right: 1.5rem;
+        font-size: 13px;
+        font-weight: 600;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          transition: color ease 0.5s;
+          &:hover {
+            // color: map-get($theme-color , 'primary' );
+            color: get-colors();
+          }
+          &.active {
+            color: get-colors();
+          }
+        }
+      }
+    }
+  }
+}
+/* header css end */
