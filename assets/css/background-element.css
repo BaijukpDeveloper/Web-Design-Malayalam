@@ -1,0 +1,9 @@
+.background-shapes .box-1 {
+  position: absolute;
+  top: 20%;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border: 3px solid red;
+}
+/*# sourceMappingURL=background-element.css.map */

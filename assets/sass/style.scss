@@ -9,9 +9,15 @@
 
 //utlites
 @import "./utilities/animation";
+@import "./utilities/spacing";
 
 //components
 @import "./components/button";
+@import "./components/badges";
 
 //layouts
 @import "./layouts/header";
+@import "./layouts/background-element";
+
+//pages
+@import "./pages/home";

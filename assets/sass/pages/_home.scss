@@ -1,0 +1,25 @@
+/*hero css start*/
+.hero-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-contents {
+    max-width: 34rem;
+  }
+  &-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  &-description {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: gray;
+  }
+  &-image {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+/*hero css end*/

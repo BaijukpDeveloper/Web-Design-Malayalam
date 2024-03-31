@@ -1,0 +1,103 @@
+/*back ground element css start*/
+.background-shapes {
+  /*box shape*/
+  .box {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 0.35rem;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+    &-1 {
+      border: 3px solid red;
+      top: 20%;
+      left: 10%;
+    }
+    &-2 {
+      border: 3px solid rgb(109, 255, 52);
+      top: 30%;
+      right: 10%;
+    }
+    &-3 {
+      border: 3px solid rgb(52, 255, 238);
+      bottom: 20%;
+      left: 20%;
+    }
+    &-4 {
+      border: 3px solid rgb(52, 106, 255);
+      bottom: 40%;
+      right: 5%;
+    }
+  }
+  /*heart shape*/
+  .heart {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 0.35rem;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+    &-1 {
+      top: 80%;
+      left: 90%;
+      color: rgb(185, 0, 0);
+    }
+    &-2 {
+      top: 30%;
+      bottom: 10%;
+      color: rgb(255, 171, 14);
+    }
+    &-3 {
+      top: 15%;
+      left: 50%;
+      color: rgb(255, 32, 225);
+    }
+    &-4 {
+      top: 60%;
+      left: 3%;
+      color: rgb(169, 39, 255);
+    }
+  }
+  /*square shpe*/
+  .square {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 0.35rem;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+    &-1 {
+      color: rgb(255, 221, 30);
+      bottom: 30%;
+      right: 50%;
+    }
+    &-2 {
+      color: rgb(255, 41, 130);
+      bottom: 10%;
+      left: 30%;
+    }
+  }
+  /*hexagon shpe*/
+  .hexagon{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 0.35rem;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+    &-1{
+      bottom: 10%;
+      right: 40%;
+      border: 1px solid rgb(255, 10, 10);
+    }
+  }
+}
+/*back ground element css end*/
