@@ -1,0 +1,12 @@
+@use "../abstracts/functions";
+
+/*hero badge css start*/
+.badges{
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: get-colors();
+    border-radius: 10px;
+    color: white;
+}
+/*hero badge css end*/

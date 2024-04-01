@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEE,kBAFgB,CAEhB,MAAM,CAAC;EACL,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;EACR,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,GAAG;EACrB,MAAM,EAAE,aAAa;CACtB",
+    "sources": [
+        "../sass/layouts/background-element.scss"
+    ],
+    "names": [],
+    "file": "background-element.css"
+}
