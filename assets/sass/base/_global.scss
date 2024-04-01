@@ -1,5 +1,6 @@
 body {
   font-family: $primary-font;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -40,4 +41,12 @@ p{
     font-size: 1rem;
     line-height: 1.6;
     color: gray;
+}
+
+.line{
+    width: 5rem;
+    height: 0.3rem;
+    margin: 10px auto;
+    border-radius: 5px;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(121,9,96,1) 35%, rgba(188,0,255,1) 100%);
 }
