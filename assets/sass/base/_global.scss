@@ -11,8 +11,18 @@ ul{
     list-style: none;
 }
 
+/*gobal container */
+.container{
+    padding: 1rem 11rem;
+    max-width: 140rem;
+}
+
 /*seting animation*/
 .color-animation{
     transition: animation ease 500ms;
     animation: color-change 10s infinite;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
 }
