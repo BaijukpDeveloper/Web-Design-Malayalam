@@ -1,28 +1,43 @@
-
-body{
-    font-family: $primary-font;
+body {
+  font-family: $primary-font;
 }
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
 /*gobal container */
-.container{
-    padding: 1rem 11rem;
-    max-width: 140rem;
+.container {
+  padding: 1rem 11rem;
+  max-width: 140rem;
 }
 
 /*seting animation*/
-.color-animation{
-    transition: animation ease 500ms;
-    animation: color-change 10s infinite;
+.color-animation {
+  transition: animation ease 500ms;
+  animation: color-change 10s infinite;
 }
 
-.text-uppercase{
-    text-transform: uppercase;
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+p{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: gray;
 }
