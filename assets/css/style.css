@@ -45,6 +45,22 @@ ul {
   text-transform: uppercase;
 }
 
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+p {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: gray;
+}
+
 /*animation for color changing */
 @-webkit-keyframes color-change {
   0% {
@@ -1148,21 +1164,21 @@ ul {
   max-width: 34rem;
 }
 
-.hero-area-title {
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-
-.hero-area-description {
-  margin-top: 1.5rem;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: gray;
-}
-
-.hero-area-image img {
-  max-width: 100%;
-}
-
 /*hero css end*/
+.about-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-area-contents {
+  max-width: 34rem;
+  padding-left: 5rem;
+}
 /*# sourceMappingURL=style.css.map */
