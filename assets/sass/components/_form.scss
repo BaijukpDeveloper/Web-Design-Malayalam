@@ -1,0 +1,17 @@
+@use "../abstracts/functions";
+/*form css start */
+.form-control{
+    padding: 0.8rem 1.5rem;
+    width: 100%;
+    background-color: rgba(228, 220, 220, 0.87);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    &:focus{
+        border: 2px solid get-colors();
+    }
+}
+.resize-none{
+    resize: none;
+}
+/*form css end */
