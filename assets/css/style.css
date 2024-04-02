@@ -62,6 +62,7 @@ p {
   color: gray;
 }
 
+/*road map line css */
 .line {
   width: 5rem;
   height: 0.3rem;
@@ -1192,6 +1193,12 @@ p {
   padding-left: 5rem;
 }
 
+/*roadmap css started */
+.roadmap-area {
+  /*contet css */
+  /*road map item css*/
+}
+
 .roadmap-area-contents {
   text-align: center;
 }
@@ -1244,4 +1251,6 @@ p {
   text-align: center;
   font-size: 0.9rem;
 }
+
+/*roadmap css end */
 /*# sourceMappingURL=style.css.map */
