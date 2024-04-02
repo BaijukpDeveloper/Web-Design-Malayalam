@@ -62,6 +62,7 @@ p {
   color: gray;
 }
 
+/*road map line css */
 .line {
   width: 5rem;
   height: 0.3rem;
@@ -1192,6 +1193,12 @@ p {
   padding-left: 5rem;
 }
 
+/*roadmap css started */
+.roadmap-area {
+  /*contet css */
+  /*road map item css*/
+}
+
 .roadmap-area-contents {
   text-align: center;
 }
@@ -1243,5 +1250,67 @@ p {
 .roadmap-area-item-info-description {
   text-align: center;
   font-size: 0.9rem;
+}
+
+/*roadmap css end */
+.course-area-contents {
+  text-align: center;
+}
+
+.course-area-description {
+  margin-top: 0.1rem;
+}
+
+.course-area-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course-area-card {
+  max-width: 280px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.course-area-card:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.course-area-card-image {
+  max-width: 100%;
+}
+
+.course-area-card-body {
+  padding: 1rem;
+}
+
+.course-area-card-description {
+  margin-top: 1rem;
+  color: black;
+  font-size: 0.9rem;
+}
+
+.course-area-info {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.course-area-info-link {
+  color: rgba(0, 0, 0, 0.897);
+}
+
+.course-area-info-link a {
+  color: blue;
 }
 /*# sourceMappingURL=style.css.map */

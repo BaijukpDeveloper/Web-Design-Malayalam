@@ -1,10 +1,13 @@
+/*roadmap css started */
 .roadmap-area {
+  /*contet css */
   &-contents {
     text-align: center;
   }
   &-description {
     margin-top: 0.1rem;
   }
+  /*road map item css*/
   &-items {
     display: flex;
     justify-content: space-between;
@@ -38,3 +41,5 @@
     }
   }
 }
+
+/*roadmap css end */
