@@ -1178,6 +1178,51 @@ p {
 }
 
 /*back ground element css end*/
+.footer-area {
+  background-color: #e9e9e9;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer-area-heading {
+  font-size: 1.1rem;
+}
+
+.footer-area .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-area .social-icons li {
+  -webkit-transition: -webkit-transform ease 0.3s;
+  transition: -webkit-transform ease 0.3s;
+  transition: transform ease 0.3s;
+  transition: transform ease 0.3s, -webkit-transform ease 0.3s;
+  padding: 1rem;
+}
+
+.footer-area .social-icons li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer-area .social-icons li a {
+  font-size: 1.1rem;
+}
+
+.footer-area-description .legal {
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+  color: black;
+}
+
 /*hero css start*/
 .hero-area {
   display: -webkit-box;
