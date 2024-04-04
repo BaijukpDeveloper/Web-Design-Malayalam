@@ -1,6 +1,11 @@
+@use "../abstracts/mixins";
 /*back ground element css start*/
 .background-shapes {
   /*box shape*/
+
+  @include responsive(xs){
+    display: none;
+  }
   .box {
     position: absolute;
     width: 15px;

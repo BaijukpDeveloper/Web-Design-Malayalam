@@ -1,3 +1,4 @@
+
 body {
   font-family: $primary-font;
   scroll-behavior: smooth;
@@ -21,6 +22,7 @@ ul {
 .color-animation {
   transition: animation ease 500ms;
   animation: color-change 10s infinite;
+ 
 }
 
 .text-uppercase {
