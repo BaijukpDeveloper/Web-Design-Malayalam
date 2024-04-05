@@ -1,5 +1,6 @@
 @use "../abstracts/variables";
 @use "../abstracts/functions";
+@use "../abstracts/mixins";
 
 /*header css start*/
 .header {
@@ -7,18 +8,32 @@
     font-family: $malayalm-font;
     font-size: 1rem;
     font-weight: 700;
+    @include responsive(xs){
+      font-size: 0.5rem;
+    }
+    .lebal{
+      @include responsive(xs){
+        font-size: 0.4rem;
+        font-weight: 900;
+      }
+    }
   }
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
   border-bottom: 1px solid rgba(201, 201, 201, 0.897);
+  @include responsive(xs){
+    padding: 0.1rem 0.3rem;
+  }
   .navbar {
     &-menu {
       display: flex;
       justify-content: center;
       align-items: center;
+      @include responsive(xs){
+        display: none;
+      }
       &-items {
         margin-right: 1.5rem;
         font-size: 13px;
