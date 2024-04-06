@@ -1018,21 +1018,25 @@ p {
 
 @media only screen and (max-width: 576px) {
   .header .logo {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .header .logo .lebal {
-    font-size: 0.4rem;
+    font-size: 0.8rem;
     font-weight: 900;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .header {
-    padding: 0.1rem 0.3rem;
+    padding: 0.5rem 0.4rem;
   }
+}
+
+.header .navbar .hanberg-icon {
+  display: none;
 }
 
 .header .navbar-menu {

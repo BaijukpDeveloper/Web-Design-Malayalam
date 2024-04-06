@@ -9,11 +9,11 @@
     font-size: 1rem;
     font-weight: 700;
     @include responsive(xs){
-      font-size: 0.5rem;
+      font-size: 1rem;
     }
     .lebal{
       @include responsive(xs){
-        font-size: 0.4rem;
+        font-size: 0.8rem;
         font-weight: 900;
       }
     }
@@ -24,9 +24,13 @@
   padding: 1rem 10rem;
   border-bottom: 1px solid rgba(201, 201, 201, 0.897);
   @include responsive(xs){
-    padding: 0.1rem 0.3rem;
+    padding: 0.5rem 0.4rem;
   }
   .navbar {
+    .hanberg-icon{
+      display: none;
+      
+    }
     &-menu {
       display: flex;
       justify-content: center;
