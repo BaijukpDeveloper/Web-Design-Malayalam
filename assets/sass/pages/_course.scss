@@ -48,6 +48,9 @@
       margin-top: 1rem;
       color: black;
       font-size: 0.9rem;
+      @include responsive(xs){
+        font-size: 0.8rem;
+      }
     }
   }
   &-info {

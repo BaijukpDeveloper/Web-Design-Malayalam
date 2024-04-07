@@ -957,7 +957,7 @@ p {
 
 @media only screen and (max-width: 576px) {
   .btn {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     margin-right: 1rem;
   }
 }
@@ -1510,6 +1510,12 @@ p {
   margin-top: 1rem;
   color: black;
   font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .course-area-card-description {
+    font-size: 0.8rem;
+  }
 }
 
 .course-area-info {
