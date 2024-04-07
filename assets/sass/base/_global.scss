@@ -1,4 +1,4 @@
-
+@use "../abstracts/mixins";
 body {
   font-family: $primary-font;
   scroll-behavior: smooth;
@@ -16,13 +16,15 @@ ul {
 .container {
   padding: 1rem 11rem;
   max-width: 140rem;
+  @include responsive(xs) {
+    padding: 1rem;
+  }
 }
 
 /*seting animation*/
 .color-animation {
   transition: animation ease 500ms;
   animation: color-change 10s infinite;
- 
 }
 
 .text-uppercase {
@@ -33,23 +35,35 @@ img {
   max-width: 100%;
 }
 
-h2{
-    font-size: 1.6rem;
-    font-weight: 600;
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  @include responsive(xs){
+    font-size: 1.2rem;
+  }
 }
 
-p{
-    margin-top: 1.5rem;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: gray;
+p {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: gray;
+  @include responsive(xs){
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
 }
 
 /*road map line css */
-.line{
-    width: 5rem;
-    height: 0.3rem;
-    margin: 10px auto;
-    border-radius: 5px;
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(121,9,96,1) 35%, rgba(188,0,255,1) 100%);
+.line {
+  width: 5rem;
+  height: 0.3rem;
+  margin: 10px auto;
+  border-radius: 5px;
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 96, 1) 35%,
+    rgba(188, 0, 255, 1) 100%
+  );
 }

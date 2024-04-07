@@ -3,10 +3,11 @@
 @import "./base/typography";
 
 //abstract
+@import "./abstracts/mixins";
 @import "./abstracts/variables";
 @import "./abstracts/functions";
 @import "./base/global";
-@import "./abstracts/mixins";
+
 
 //utlites
 @import "./utilities/animation";

@@ -1,10 +1,25 @@
 .about-area {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  margin-top: 5rem;
+  @include responsive(sm){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @include responsive(xs){
+    margin: 0.1rem 0;
+  }
   &-contents {
     max-width: 34rem;
     padding-left: 5rem;
+    @include responsive(xs){
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+  &-description{
+    @include responsive(xs){
+
+      text-align: left;
+    }
   }
 }

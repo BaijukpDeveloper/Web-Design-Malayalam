@@ -1,30 +1,44 @@
 /*course section css */
 .course-area {
+  margin: 5rem 0;
+  @include responsive(xs) {
+    margin: 2rem 0;
+  }
   &-contents {
     text-align: center;
+    padding-bottom: 2.5rem;
   }
   &-description {
     margin-top: 0.1rem;
   }
   /*card css start*/
   &-cards {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include responsive(sm) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    
   }
   /*single card css start*/
   &-card {
-    max-width: 280px;
-    overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     &:hover {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
         0 10px 10px rgba(0, 0, 0, 0.22);
     }
+    @include responsive(xs){
+      margin-bottom: 2rem;
+      
+    }
+   
+    
     /*card image css*/
     &-image {
-      max-width: 100%;
+      overflow: hidden;
+      width: 100%;
     }
     &-body {
       padding: 1rem;
@@ -34,14 +48,24 @@
       margin-top: 1rem;
       color: black;
       font-size: 0.9rem;
+      @include responsive(xs){
+        font-size: 0.8rem;
+      }
     }
   }
-  &-info{
+  &-info {
     text-align: center;
     padding-top: 1rem;
-    &-link{
+    @include responsive(xs){
+      padding-top: 0;
+    }
+    &-link {
       color: rgba(0, 0, 0, 0.897);
-      a{
+      @include responsive(xs){
+        padding-top: 0;
+        font-size: 1rem;
+      }
+      a {
         color: blue;
       }
     }
