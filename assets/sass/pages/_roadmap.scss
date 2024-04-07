@@ -1,5 +1,9 @@
 /*roadmap css started */
 .roadmap-area {
+  margin: 4rem 0;
+  @include responsive(xs) {
+    margin: 2rem 0;
+  }
   /*contet css */
   &-contents {
     text-align: center;
@@ -9,11 +13,17 @@
   }
   /*road map item css*/
   &-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     text-align: center;
     gap: 5rem;
+    margin: 5rem 0;
+    @include responsive(xs){
+      margin: 2rem 0 0 0;
+    }
+    @include responsive(sm) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
   &-item {
     cursor: pointer;
@@ -22,7 +32,7 @@
         max-width: 5rem;
         max-height: 5rem;
         transition: all 0.6s;
-        &:hover{
+        &:hover {
           transform: scale(1.1);
         }
       }
