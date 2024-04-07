@@ -8,11 +8,11 @@
     font-family: $malayalm-font;
     font-size: 1rem;
     font-weight: 700;
-    @include responsive(xs){
+    @include responsive(xs) {
       font-size: 1rem;
     }
-    .lebal{
-      @include responsive(xs){
+    .lebal {
+      @include responsive(xs) {
         font-size: 0.8rem;
         font-weight: 900;
       }
@@ -23,19 +23,21 @@
   align-items: center;
   padding: 1rem 10rem;
   border-bottom: 1px solid rgba(201, 201, 201, 0.897);
-  @include responsive(xs){
+  @include responsive(xs) {
     padding: 0.5rem 0.4rem;
   }
   .navbar {
-    .hanberg-icon{
+    .hanberg-icon {
       display: none;
-      
+      @include responsive(xs){
+        display: block;
+      }
     }
     &-menu {
       display: flex;
       justify-content: center;
       align-items: center;
-      @include responsive(xs){
+      @include responsive(xs) {
         display: none;
       }
       &-items {
