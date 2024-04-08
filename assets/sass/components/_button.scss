@@ -22,6 +22,9 @@
       background-color: get-colors("hover-color");
       color: white !important;
     }
+    @include responsive(xs){
+      background-color: get-colors('hover-color');
+    }
   }
   /*secondary button css start*/
   &-secondary {

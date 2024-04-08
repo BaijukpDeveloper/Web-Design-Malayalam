@@ -18,7 +18,11 @@
   @include responsive(lg) {
     flex-direction: row;
   }
-  
+  &-title{
+    @include responsive(xs){
+      word-spacing: 5px;
+    }
+  }
 
   &-contents {
     @include responsive(lg) {

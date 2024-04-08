@@ -29,17 +29,18 @@
       </div>
       <nav class="navbar">
         <div class="hanberg-icon">
-          <i class="fa fa-bars"></i>
+          <i class="navIcon fa fa-bars"></i>    
+          <i class="navIcon fa fa-times hidden"></i>    
         </div>
         <ul class="navbar-menu">
           <li class="navbar-item navbar-menu-items">
-            <a href="" class="active">Home</a>
+            <a href="#home" class="active">Home</a>
           </li>
-          <li class="navbar-item navbar-menu-items"><a href="">About</a></li>
-          <li class="navbar-item navbar-menu-items"><a href="">Roadmap</a></li>
-          <li class="navbar-item navbar-menu-items"><a href="">Course</a></li>
+          <li class="navbar-item navbar-menu-items"><a href="#about">About</a></li>
+          <li class="navbar-item navbar-menu-items"><a href="#roadmap">Roadmap</a></li>
+          <li class="navbar-item navbar-menu-items"><a href="#course">Course</a></li>
           <li class="navbar-item navbar-menu-items">
-            <a href="" class="btn btn-primary">Contact Us</a>
+            <a href="#contact"  class="btn btn-primary">Contact Us</a>
           </li>
         </ul>
       </nav>
@@ -49,7 +50,7 @@
     <!--==== main start =====-->
     <main class="container">
        <!-- =======hero section start======== -->
-      <section class="hero-area">
+      <section id="home" class="hero-area">
           <div class="background-shapes">
             <div class="box box-1"></div>
             <div class="box box-2"></div>
@@ -104,7 +105,7 @@
       </section>
       <!-- =======hero section end======== -->
       <!-- ======about-section-start====== -->
-      <section class="about-area ">
+      <section id="about" class="about-area ">
         <div class="about-area-image">
           <img
             src="./assets/images/about-section-Illustration.jfif"
@@ -125,7 +126,7 @@
       <!-- ======about-section-end====== -->
 
       <!-- ======roadmap section start====== -->
-      <section class="roadmap-area">
+      <section id="roadmap" class="roadmap-area">
         <div class="roadmap-area-contents">
           <h2 class="roadmap-area-title">Roadmap to Expertise</h2>
           <p class="roadmap-area-description">
@@ -184,7 +185,7 @@
       <!-- ======roadmap section end======= -->
 
       <!-- =====course section start====== -->
-      <section class="course-area">
+      <section id="course" class="course-area">
         <div class="course-area-contents">
           <h2 class="course-area-heading">Free Course to Enroll</h2>
           <p class="course-area-description">
@@ -257,7 +258,7 @@
       <!-- =====course section end====== -->
 
       <!-- ======contact section start===== -->
-      <section class="contact-area">
+      <section id="contact" class="contact-area">
         <div class="contact-area-card">
           <form class="contact-area-card-form space-y-1" method="POST" action="#">
             <div class="contact-area-card-header">
@@ -307,5 +308,7 @@
       </div>
     </footer>
     <!--===== footer end =====-->
+    <!-- javascript files -->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
