@@ -10,7 +10,6 @@
     font-size: 0.7rem;
     margin-right: 1rem;
   }
-
   font-weight: 600;
   border: none;
   outline: none;
@@ -41,6 +40,10 @@
 .ctn-btn {
   @include responsive(xs) {
     font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+  @include responsive(xlg) {
+    font-size: 1.1rem;
     padding: 0.8rem 1.5rem;
   }
 }

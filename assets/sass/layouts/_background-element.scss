@@ -73,6 +73,9 @@
       @include responsive(md) {
         top: 11%;
       }
+      @include responsive(xlg) {
+        top: 15%;
+      }
     }
     &-3 {
       top: 15%;

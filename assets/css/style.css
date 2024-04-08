@@ -92,6 +92,18 @@ h2 {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  h2 {
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h4 {
+    font-size: 1.1rem;
+  }
+}
+
 p {
   margin-top: 1.5rem;
   font-size: 1rem;
@@ -109,6 +121,12 @@ p {
 @media only screen and (min-width: 992px) {
   p {
     font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  p {
+    font-size: 1.3rem;
   }
 }
 
@@ -1024,6 +1042,13 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .ctn-btn {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
 @use "../abstracts/functions";
 /*hero badge css start*/
 .badges {
@@ -1055,6 +1080,12 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .badges {
+    font-size: 1.2rem;
+  }
+}
+
 /*hero badge css end*/
 @use "../abstracts/functions";
 @use "../abstracts/mixins";
@@ -1071,6 +1102,12 @@ p {
 @media only screen and (min-width: 992px) {
   .form-control {
     font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .form-control {
+    font-size: 1.2rem;
   }
 }
 
@@ -1107,6 +1144,12 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .header {
+    padding: 1.5rem 2.5rem;
+  }
+}
+
 .header .logo {
   font-family: "Noto Sans Malayalam", sans-serif;
   font-size: 1rem;
@@ -1128,6 +1171,12 @@ p {
 @media only screen and (min-width: 992px) {
   .header .logo {
     font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header .logo {
+    font-size: 1.4rem;
   }
 }
 
@@ -1193,6 +1242,12 @@ p {
 @media only screen and (min-width: 992px) {
   .header .navbar-menu-items {
     font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header .navbar-menu-items {
+    font-size: 17px;
   }
 }
 
@@ -1327,6 +1382,12 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .background-shapes .heart-2 {
+    top: 15%;
+  }
+}
+
 .background-shapes .heart-3 {
   top: 15%;
   left: 50%;
@@ -1458,6 +1519,12 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .footer-area-heading {
+    font-size: 1.4rem;
+  }
+}
+
 .footer-area .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1493,6 +1560,12 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .footer-area .social-icons li a {
+    font-size: 1.5rem;
+  }
+}
+
 .footer-area-description .legal {
   font-size: 0.8rem;
   margin-top: 0.1rem;
@@ -1502,6 +1575,12 @@ p {
 @media only screen and (min-width: 992px) {
   .footer-area-description .legal {
     font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-area-description .legal {
+    font-size: 1.2rem;
   }
 }
 
@@ -1563,9 +1642,21 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .hero-area-contents {
+    max-width: 40rem;
+  }
+}
+
 @media only screen and (min-width: 576px) {
   .hero-area-image {
     max-width: 50rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-area-image {
+    max-width: 30rem;
   }
 }
 
@@ -1574,9 +1665,13 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 3.5rem;
 }
 
 @media only screen and (max-width: 576px) {
@@ -1621,6 +1716,12 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .about-area-image {
+    max-width: 40rem;
+  }
+}
+
 .about-area-contents {
   padding-left: 5rem;
 }
@@ -1635,6 +1736,12 @@ p {
 @media only screen and (min-width: 992px) {
   .about-area-contents {
     max-width: 25rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-area-contents {
+    max-width: 35rem;
   }
 }
 
@@ -1660,6 +1767,12 @@ p {
 @media only screen and (min-width: 992px) {
   .roadmap-area {
     margin: 3rem 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .roadmap-area {
+    margin: 3.5rem 0;
   }
 }
 
@@ -1717,6 +1830,12 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .roadmap-area-items {
+    margin: 6rem 0;
+  }
+}
+
 .roadmap-area-item {
   cursor: pointer;
 }
@@ -1756,6 +1875,12 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .roadmap-area-item-info-heading {
+    font-size: 1.5rem;
+  }
+}
+
 .roadmap-area-item-info-description {
   text-align: center;
   font-size: 0.9rem;
@@ -1767,8 +1892,15 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .roadmap-area-item-info-description {
+    font-size: 1.3rem;
+  }
+}
+
 /*roadmap css end */
 /*course section css */
+@use "../abstracts/mixins";
 .course-area {
   margin: 5rem 0;
   /*card css start*/
@@ -1785,6 +1917,12 @@ p {
 .course-area-contents {
   text-align: center;
   padding-bottom: 2.5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .course-area-contents {
+    padding-bottom: 5rem;
+  }
 }
 
 .course-area-description {
@@ -1878,6 +2016,12 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .course-area-card-description {
+    font-size: 1.2rem;
+  }
+}
+
 .course-area-info {
   text-align: center;
   padding-top: 1rem;
@@ -1957,12 +2101,6 @@ p {
 
 .contact-area-card-header {
   margin-top: 1rem;
-}
-
-@media only screen and (min-width: 992px) {
-  .contact-area-card-title {
-    font-size: 1.5rem;
-  }
 }
 
 .contact-area-card-description {

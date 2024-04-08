@@ -7,6 +7,9 @@
   @include responsive(lg) {
     margin: 3rem 0;
   }
+  @include responsive(xlg) {
+    margin: 3.5rem 0;
+  }
   /*contet css */
   &-contents {
     text-align: center;
@@ -35,6 +38,9 @@
       margin: 3rem 0;
       gap: 1rem;
     }
+    @include responsive(xlg) {
+      margin: 6rem 0;
+    }
   }
   &-item {
     cursor: pointer;
@@ -62,12 +68,18 @@
         @include responsive(md){
           font-size: 1.1rem;
         }
+        @include responsive(xlg){
+          font-size: 1.5rem;
+        }
       }
       &-description {
         text-align: center;
         font-size: 0.9rem;
         @include responsive(md){
           font-size: 1.1rem;
+        }
+        @include responsive(xlg){
+          font-size: 1.3rem;
         }
       }
     }

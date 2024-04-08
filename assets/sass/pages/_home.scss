@@ -18,15 +18,22 @@
   @include responsive(lg) {
     flex-direction: row;
   }
+  
 
   &-contents {
     @include responsive(lg) {
       max-width: 22rem;
     }
+    @include responsive(xlg) {
+      max-width: 40rem;
+    }
   }
   &-image {
     @include responsive(sm) {
       max-width: 50rem;
+    }
+    @include responsive(xlg) {
+      max-width: 30rem;
     }
   }
 }

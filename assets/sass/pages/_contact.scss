@@ -20,17 +20,14 @@
     &-header {
       margin-top: 1rem;
     }
-    &-title{
-      @include responsive(lg){
-        font-size: 1.5rem;
-      }
-    }
+    
     &-description {
       margin-top: 0.1rem;
       margin-bottom: 1rem;
       @include responsive(lg){
         font-size: 1.2rem;
       }
+      
     }
     &-form {
       max-width: 60rem;

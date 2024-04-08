@@ -9,6 +9,9 @@
     @include responsive(lg){
       font-size: 1.3rem;
     }
+    @include responsive(xlg){
+      font-size: 1.4rem;
+    }
   }
   .social-icons {
     display: flex;
@@ -26,6 +29,9 @@
         @include responsive(lg){
           font-size: 1.4rem;
         }
+        @include responsive(xlg){
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -36,6 +42,9 @@
         color: black;
         @include responsive(lg){
           font-size: 1.1rem;
+        }
+        @include responsive(xlg){
+          font-size: 1.2rem;
         }
     }
   }

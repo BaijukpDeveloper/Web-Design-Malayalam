@@ -7,6 +7,9 @@
   @include responsive(sm){
     padding: 1rem 2rem;
   }
+  @include responsive(xlg){
+    padding: 1.5rem 2.5rem;
+  }
   .logo {
     font-family: $malayalm-font;
     font-size: 1rem;
@@ -19,6 +22,9 @@
     }
     @include responsive(lg){
       font-size: 1.3rem;
+    }
+    @include responsive(xlg){
+      font-size: 1.4rem;
     }
     .lebal {
       @include responsive(xs) {
@@ -62,6 +68,9 @@
         font-weight: 600;
         @include responsive(lg){
           font-size: 16px;
+        }
+        @include responsive(xlg){
+          font-size: 17px;
         }
         &:last-child {
           margin-right: 0;

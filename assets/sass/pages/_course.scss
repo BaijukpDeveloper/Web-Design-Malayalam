@@ -1,4 +1,5 @@
 /*course section css */
+@use "../abstracts/mixins";
 .course-area {
   margin: 5rem 0;
   @include responsive(xs) {
@@ -7,6 +8,9 @@
   &-contents {
     text-align: center;
     padding-bottom: 2.5rem;
+    @include responsive(xlg){
+      padding-bottom: 5rem;
+    }
   }
   &-description {
     margin-top: 0.1rem;
@@ -38,9 +42,7 @@
     @include responsive(xs) {
       margin-bottom: 2rem;
     }
-    @include responsive(sm) {
-      // max-width: 30rem;
-    }
+    
 
     /*card image css*/
     &-image {
@@ -50,6 +52,7 @@
     &-body {
       padding: 1rem;
     }
+   
     /*card description css */
     &-description {
       margin-top: 1rem;
@@ -60,6 +63,9 @@
       }
       @include responsive(lg) {
         font-size: 1rem;
+      }
+      @include responsive(xlg) {
+        font-size: 1.2rem;
       }
     }
   }
