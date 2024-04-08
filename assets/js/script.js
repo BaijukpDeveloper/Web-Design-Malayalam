@@ -17,3 +17,27 @@ navToggler.addEventListener('click',() => {
         icon.classList.toggle('hidden')
     })
 })
+
+
+// window scrolling header effect
+const navbarFixed = () =>{
+    const headerEl = document.querySelector('.header');
+
+    // header and window height
+    const header_offset_top = headerEl.clientHeight + 50;
+
+    // scrolling action
+    window.addEventListener("scroll", ()=>{
+        // taking the scrolling values
+        let scroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        // checking scrolling or not
+        if(scroll >= header_offset_top){
+            headerEl.classList.add('fixed');
+        }else{
+            headerEl.classList.remove('fixed')
+        }
+    })
+};
+
+navbarFixed();
