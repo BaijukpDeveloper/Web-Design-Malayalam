@@ -1,24 +1,39 @@
 .about-area {
-  margin-top: 5rem;
-  @include responsive(sm){
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  @include responsive(xs){
+  display: flex;
+  align-items: center;
+  @include responsive(xs) {
     margin: 0.1rem 0;
+    flex-direction: column;
+  }
+  @include responsive(sm) {
+    margin-top: 0.1rem;
+    flex-direction: column;
+  }
+  @include responsive(lg){
+    flex-direction: row;
+    margin: 8rem 0;
+  }
+  &-image{
+    @include responsive(sm){
+      max-width: 25rem;
+    }
+    @include responsive(lg){
+      max-width: 30rem;
+    }
   }
   &-contents {
-    max-width: 34rem;
+    
     padding-left: 5rem;
-    @include responsive(xs){
+    @include responsive(xs) {
       padding-left: 0;
       text-align: center;
     }
+    @include responsive(lg){
+      max-width: 25rem;
+    }
   }
-  &-description{
-    @include responsive(xs){
-
+  &-description {
+    @include responsive(xs) {
       text-align: left;
     }
   }

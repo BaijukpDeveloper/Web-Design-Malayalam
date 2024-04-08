@@ -4,12 +4,21 @@
 
 /*header css start*/
 .header {
+  @include responsive(sm){
+    padding: 1rem 2rem;
+  }
   .logo {
     font-family: $malayalm-font;
     font-size: 1rem;
     font-weight: 700;
     @include responsive(xs) {
       font-size: 1rem;
+    }
+    @include responsive(md){
+      font-size: 1.5rem;
+    }
+    @include responsive(lg){
+      font-size: 1.3rem;
     }
     .lebal {
       @include responsive(xs) {
@@ -28,22 +37,32 @@
   }
   .navbar {
     .hanberg-icon {
-      display: none;
+      @include responsive(sm){
+        display: block;
+        font-size: 1.5rem;
+      }
       @include responsive(xs){
         display: block;
+      }
+      @include responsive(lg){
+        display: none;
       }
     }
     &-menu {
       display: flex;
       justify-content: center;
       align-items: center;
-      @include responsive(xs) {
-        display: none;
+      display: none;
+      @include responsive(lg){
+        display: flex;
       }
       &-items {
         margin-right: 1.5rem;
         font-size: 13px;
         font-weight: 600;
+        @include responsive(lg){
+          font-size: 16px;
+        }
         &:last-child {
           margin-right: 0;
         }

@@ -3,7 +3,7 @@
 .background-shapes {
   /*box shape*/
 
-  @include responsive(xs){
+  @include responsive(xs) {
     display: none;
   }
   .box {
@@ -19,6 +19,9 @@
       border: 3px solid red;
       top: 20%;
       left: 10%;
+      @include responsive(sm) {
+        top: 25%;
+      }
     }
     &-2 {
       border: 3px solid rgb(109, 255, 52);
@@ -29,6 +32,12 @@
       border: 3px solid rgb(52, 255, 238);
       bottom: 20%;
       left: 20%;
+      @include responsive(sm) {
+        bottom: 21%;
+      }
+      @include responsive(lg) {
+        bottom: 36%;
+      }
     }
     &-4 {
       border: 3px solid rgb(52, 106, 255);
@@ -50,16 +59,35 @@
       top: 80%;
       left: 90%;
       color: rgb(185, 0, 0);
+      @include responsive(lg) {
+        top: 60%;
+      }
     }
     &-2 {
       top: 30%;
       bottom: 10%;
       color: rgb(255, 171, 14);
+      @include responsive(sm) {
+        top: 25%;
+      }
+      @include responsive(md) {
+        top: 11%;
+      }
     }
     &-3 {
       top: 15%;
       left: 50%;
       color: rgb(255, 32, 225);
+      @include responsive(sm) {
+        left: 30%;
+        top: 25%;
+      }
+      @include responsive(md) {
+        top: 18%;
+      }
+      @include responsive(lg) {
+        bottom: 50%;
+      }
     }
     &-4 {
       top: 60%;
@@ -81,15 +109,28 @@
       color: rgb(255, 221, 30);
       bottom: 30%;
       right: 50%;
+      @include responsive(sm) {
+        bottom: 25%;
+      }
+      @include responsive(lg){
+        bottom: 29%;
+      }
     }
     &-2 {
       color: rgb(255, 41, 130);
       bottom: 10%;
       left: 30%;
+      @include responsive(sm) {
+        bottom: 10%;
+        left: 10%;
+      }
+      @include responsive(lg){
+        bottom: 29%;
+      }
     }
   }
   /*hexagon shpe*/
-  .hexagon{
+  .hexagon {
     position: absolute;
     width: 15px;
     height: 15px;
@@ -98,10 +139,16 @@
     z-index: -1;
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
-    &-1{
+    &-1 {
       bottom: 10%;
       right: 40%;
       border: 1px solid rgb(255, 10, 10);
+      @include responsive(sm) {
+        right: 20%;
+      }
+      @include responsive(lg){
+        bottom: 30%;
+      }
     }
   }
 }
