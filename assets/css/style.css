@@ -140,6 +140,10 @@ p {
   background: linear-gradient(0deg, #020024 0%, #790960 35%, #bc00ff 100%);
 }
 
+.hidden {
+  display: none;
+}
+
 /*animation for color changing */
 @-webkit-keyframes color-change {
   0% {
@@ -1022,6 +1026,12 @@ p {
   color: white !important;
 }
 
+@media only screen and (max-width: 576px) {
+  .btn-primary {
+    background-color: #007FFF;
+  }
+}
+
 .btn-secondary {
   background-color: white;
   border: 1px solid #00B9E8;
@@ -1193,16 +1203,17 @@ p {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  .header .navbar .hanberg-icon {
+    display: block;
+    font-size: 1.3rem;
+  }
+}
+
 @media only screen and (min-width: 576px) {
   .header .navbar .hanberg-icon {
     display: block;
     font-size: 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .header .navbar .hanberg-icon {
-    display: block;
   }
 }
 
@@ -1223,6 +1234,36 @@ p {
       -ms-flex-align: center;
           align-items: center;
   display: none;
+  /*mobile menu css start*/
+  /*mobile menu css end*/
+}
+
+@media only screen and (max-width: 576px) {
+  .header .navbar-menu {
+    position: fixed;
+    background-color: #00B9E8;
+    top: -100%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .header .navbar-menu.show {
+    display: block;
+    top: 42px;
+    text-align: center;
+  }
+  .header .navbar-menu li {
+    padding: 2rem;
+  }
+  .header .navbar-menu li a {
+    color: white;
+  }
+  .header .navbar-menu li a.active {
+    color: black;
+  }
 }
 
 @media only screen and (min-width: 992px) {

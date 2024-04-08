@@ -45,6 +45,7 @@
     .hanberg-icon {
       @include responsive(xs){
         display: block;
+        font-size: 1.3rem;
       }
       @include responsive(sm){
         display: block;
@@ -59,6 +60,33 @@
       justify-content: center;
       align-items: center;
       display: none;
+      /*mobile menu css start*/
+      @include responsive(xs){
+        // display: none;
+        position: fixed;  
+        background-color: get-colors();
+        top: -100%;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        transition: 500ms;
+        &.show{
+          display: block;
+          top: 42px;
+          text-align: center;
+        }
+        & li{
+          padding: 2rem;
+          a{
+            color: white;
+            &.active{
+              color: black;
+            }
+          }
+        }
+      }
+      /*mobile menu css end*/
       @include responsive(lg){
         display: flex;
       }
