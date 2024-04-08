@@ -1716,14 +1716,16 @@ p {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .about-area-image {
+    max-width: 35rem;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .about-area-image {
     max-width: 40rem;
   }
-}
-
-.about-area-contents {
-  padding-left: 5rem;
 }
 
 @media only screen and (max-width: 576px) {
@@ -1736,6 +1738,12 @@ p {
 @media only screen and (min-width: 992px) {
   .about-area-contents {
     max-width: 25rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-area-contents {
+    max-width: 23rem;
   }
 }
 

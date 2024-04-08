@@ -22,18 +22,24 @@
     @include responsive(lg) {
       max-width: 30rem;
     }
+    @include responsive(md) {
+      max-width: 35rem;
+    }
     @include responsive(xlg) {
       max-width: 40rem;
     }
   }
   &-contents {
-    padding-left: 5rem;
+    
     @include responsive(xs) {
       padding-left: 0;
       text-align: center;
     }
     @include responsive(lg) {
       max-width: 25rem;
+    }
+    @include responsive(md) {
+      max-width: 23rem;
     }
     @include responsive(xlg) {
       max-width: 35rem;
