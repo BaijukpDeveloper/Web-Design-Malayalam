@@ -6,6 +6,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /*fonts*/
@@ -15,7 +16,6 @@
 @use "../abstracts/mixins";
 body {
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
 }
 
 a {

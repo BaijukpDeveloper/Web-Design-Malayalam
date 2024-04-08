@@ -1,7 +1,8 @@
 @use "../abstracts/mixins";
+
 body {
   font-family: $primary-font;
-  scroll-behavior: smooth;
+ 
 }
 a {
   text-decoration: none;
