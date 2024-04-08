@@ -1,8 +1,14 @@
 /*roadmap css started */
+@use "../abstracts/mixins";
 .roadmap-area {
-  margin: 4rem 0;
   @include responsive(xs) {
     margin: 2rem 0;
+  }
+  @include responsive(lg) {
+    margin: 3rem 0;
+  }
+  @include responsive(xlg) {
+    margin: 3.5rem 0;
   }
   /*contet css */
   &-contents {
@@ -16,13 +22,24 @@
     text-align: center;
     gap: 5rem;
     margin: 5rem 0;
-    @include responsive(xs){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include responsive(xs) {
       margin: 2rem 0 0 0;
+      flex-direction: column;
     }
     @include responsive(sm) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
+      margin: 2.2rem 0;
+    }
+    @include responsive(lg) {
+      flex-direction: row;
+      margin: 3rem 0;
+      gap: 1rem;
+    }
+    @include responsive(xlg) {
+      margin: 6rem 0;
     }
   }
   &-item {
@@ -31,6 +48,10 @@
       &-icon {
         max-width: 5rem;
         max-height: 5rem;
+        @include responsive(lg) {
+          max-width: 7rem;
+        max-height: 7rem;
+        }
         transition: all 0.6s;
         &:hover {
           transform: scale(1.1);
@@ -40,13 +61,26 @@
     &-info {
       padding: 1rem;
       line-height: 0.19rem;
+      
       &-heading {
         font-size: 1rem;
         font-weight: 600;
+        @include responsive(md){
+          font-size: 1.1rem;
+        }
+        @include responsive(xlg){
+          font-size: 1.5rem;
+        }
       }
       &-description {
         text-align: center;
         font-size: 0.9rem;
+        @include responsive(md){
+          font-size: 1.1rem;
+        }
+        @include responsive(xlg){
+          font-size: 1.3rem;
+        }
       }
     }
   }

@@ -1,15 +1,40 @@
 @use "../abstracts/mixins";
 /*hero css start*/
 .hero-area {
-  @include responsive(sm){
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  @include responsive(xs) {
+    flex-direction: column;
   }
-  &-contents {
-    max-width: 34rem;
+  @include responsive(sm) {
+    flex-direction: column;
+    margin-bottom: 0.1rem;
   }
+  @include responsive(md) {
+    flex-direction: column;
+  }
+  @include responsive(lg) {
+    flex-direction: row;
+  }
+  
 
+  &-contents {
+    @include responsive(lg) {
+      max-width: 22rem;
+    }
+    @include responsive(xlg) {
+      max-width: 40rem;
+    }
+  }
+  &-image {
+    @include responsive(sm) {
+      max-width: 50rem;
+    }
+    @include responsive(xlg) {
+      max-width: 30rem;
+    }
+  }
 }
 /*hero css end*/

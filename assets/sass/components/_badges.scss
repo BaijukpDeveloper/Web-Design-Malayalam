@@ -13,5 +13,14 @@
         font-size: 0.8rem;
         border-radius: 5px;
     }
+    @include responsive(sm){
+        font-size: 0.8rem;
+    }
+    @include responsive(md){
+        font-size: 1rem;
+    }
+    @include responsive(xlg){
+        font-size: 1.2rem;
+    }
 }
 /*hero badge css end*/

@@ -6,7 +6,7 @@
   border-radius: 6px;
   line-height: 1;
   font-size: 0.9rem;
-  @include responsive(xs){
+  @include responsive(xs) {
     font-size: 0.7rem;
     margin-right: 1rem;
   }
@@ -24,15 +24,26 @@
     }
   }
   /*secondary button css start*/
-  &-secondary{
+  &-secondary {
     background-color: white;
     border: 1px solid get-colors();
     transition: background-color ease 0.5s;
-    &:hover{
-      background-color: get-colors('hover-color');
-      border: 1px solid get-colors('hover-color');
+    &:hover {
+      background-color: get-colors("hover-color");
+      border: 1px solid get-colors("hover-color");
       color: white;
     }
   }
-   /*secondary button css end*/
+  /*secondary button css end*/
+}
+
+.ctn-btn {
+  @include responsive(xs) {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+  @include responsive(xlg) {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+  }
 }

@@ -16,8 +16,15 @@ ul {
 .container {
   padding: 1rem 11rem;
   max-width: 140rem;
+  
   @include responsive(xs) {
     padding: 1rem;
+  }
+  @include responsive(sm){
+    padding: 1.5rem 6rem;
+  }
+  @include responsive(lg){
+    padding: 1.5rem 8rem;
   }
 }
 
@@ -41,6 +48,21 @@ h2 {
   @include responsive(xs){
     font-size: 1.2rem;
   }
+  @include responsive(sm){
+    font-size: 1.1rem;
+  }
+  @include responsive(md){
+    font-size: 1.5rem;
+  }
+  @include responsive(xlg){
+    font-size: 1.9rem;
+  }
+}
+
+h4{
+  @include responsive(xlg){
+    font-size: 1.1rem;
+  }
 }
 
 p {
@@ -51,6 +73,12 @@ p {
   @include responsive(xs){
     margin-top: 1rem;
     font-size: 0.8rem;
+  }
+  @include responsive(lg){
+    font-size: 1.1rem;
+  }
+  @include responsive(xlg){
+    font-size: 1.3rem;
   }
 }
 

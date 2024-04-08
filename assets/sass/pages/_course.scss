@@ -1,4 +1,5 @@
 /*course section css */
+@use "../abstracts/mixins";
 .course-area {
   margin: 5rem 0;
   @include responsive(xs) {
@@ -7,19 +8,28 @@
   &-contents {
     text-align: center;
     padding-bottom: 2.5rem;
+    @include responsive(xlg){
+      padding-bottom: 5rem;
+    }
   }
   &-description {
     margin-top: 0.1rem;
   }
   /*card css start*/
   &-cards {
-    @include responsive(sm) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    @include responsive(xs) {
+      flex-direction: column;
     }
-    
+    @include responsive(sm) {
+      flex-direction: column;
+    }
+    @include responsive(lg) {
+      flex-direction: row;
+    }
   }
   /*single card css start*/
   &-card {
@@ -29,12 +39,11 @@
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
         0 10px 10px rgba(0, 0, 0, 0.22);
     }
-    @include responsive(xs){
+    @include responsive(xs) {
       margin-bottom: 2rem;
-      
     }
-   
     
+
     /*card image css*/
     &-image {
       overflow: hidden;
@@ -43,27 +52,37 @@
     &-body {
       padding: 1rem;
     }
+   
     /*card description css */
     &-description {
       margin-top: 1rem;
       color: black;
       font-size: 0.9rem;
-      @include responsive(xs){
+      @include responsive(xs) {
         font-size: 0.8rem;
+      }
+      @include responsive(lg) {
+        font-size: 1rem;
+      }
+      @include responsive(xlg) {
+        font-size: 1.2rem;
       }
     }
   }
   &-info {
     text-align: center;
     padding-top: 1rem;
-    @include responsive(xs){
+    @include responsive(xs) {
       padding-top: 0;
     }
     &-link {
       color: rgba(0, 0, 0, 0.897);
-      @include responsive(xs){
+      @include responsive(xs) {
         padding-top: 0;
         font-size: 1rem;
+      }
+      @include responsive(lg) {
+        font-size: 1.2rem;
       }
       a {
         color: blue;

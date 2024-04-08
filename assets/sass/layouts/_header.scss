@@ -4,15 +4,30 @@
 
 /*header css start*/
 .header {
+  @include responsive(sm){
+    padding: 1rem 2rem;
+  }
+  @include responsive(xlg){
+    padding: 1.5rem 2.5rem;
+  }
   .logo {
     font-family: $malayalm-font;
     font-size: 1rem;
     font-weight: 700;
-    @include responsive(xs){
+    @include responsive(xs) {
       font-size: 1rem;
     }
-    .lebal{
-      @include responsive(xs){
+    @include responsive(md){
+      font-size: 1.5rem;
+    }
+    @include responsive(lg){
+      font-size: 1.3rem;
+    }
+    @include responsive(xlg){
+      font-size: 1.4rem;
+    }
+    .lebal {
+      @include responsive(xs) {
         font-size: 0.8rem;
         font-weight: 900;
       }
@@ -23,25 +38,40 @@
   align-items: center;
   padding: 1rem 10rem;
   border-bottom: 1px solid rgba(201, 201, 201, 0.897);
-  @include responsive(xs){
+  @include responsive(xs) {
     padding: 0.5rem 0.4rem;
   }
   .navbar {
-    .hanberg-icon{
-      display: none;
-      
+    .hanberg-icon {
+      @include responsive(sm){
+        display: block;
+        font-size: 1.5rem;
+      }
+      @include responsive(xs){
+        display: block;
+      }
+      @include responsive(lg){
+        display: none;
+      }
     }
     &-menu {
       display: flex;
       justify-content: center;
       align-items: center;
-      @include responsive(xs){
-        display: none;
+      display: none;
+      @include responsive(lg){
+        display: flex;
       }
       &-items {
         margin-right: 1.5rem;
         font-size: 13px;
         font-weight: 600;
+        @include responsive(lg){
+          font-size: 16px;
+        }
+        @include responsive(xlg){
+          font-size: 17px;
+        }
         &:last-child {
           margin-right: 0;
         }
