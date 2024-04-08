@@ -43,12 +43,12 @@
   }
   .navbar {
     .hanberg-icon {
+      @include responsive(xs){
+        display: block;
+      }
       @include responsive(sm){
         display: block;
         font-size: 1.5rem;
-      }
-      @include responsive(xs){
-        display: block;
       }
       @include responsive(lg){
         display: none;
@@ -78,7 +78,6 @@
         a {
           transition: color ease 0.5s;
           &:hover {
-            // color: map-get($theme-color , 'primary' );
             color: get-colors();
           }
           &.active {
