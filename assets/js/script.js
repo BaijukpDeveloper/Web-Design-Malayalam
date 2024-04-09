@@ -40,4 +40,34 @@ const navbarFixed = () =>{
     })
 };
 
+
+
+const setMenuActive = () =>{
+    const sectionEl = document.querySelectorAll('section');
+    console.log('section',sectionEl);
+    const navEl = document.querySelectorAll('.navbar-menu-items>a');
+    console.log('nav element', navEl);
+    window.addEventListener('scroll',() =>{
+        let current = "";
+
+        sectionEl.forEach((section)=>{
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+
+            if(pageYOffset >= sectionTop - sectionHeight / 3) {
+                current = section.getAttribute("id");
+            }
+        })
+        
+        navEl.forEach((li)=>{
+            li.classList.remove("active");
+            if(current == li.getAttribute("href").split("#")[1]){
+                li.classList.add("active")
+            }
+        })
+    });
+    
+};
+
 navbarFixed();
+setMenuActive();
