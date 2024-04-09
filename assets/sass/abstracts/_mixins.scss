@@ -1,4 +1,5 @@
-@mixin responsive($breakpoint) {
+@use "../abstracts/functions";
+@mixin responsive($breakpoint , $scope : "") {
   //x-small devices (portarite phones, less than 576px) (xs)
   @if $breakpoint == xs {
     @media only screen and(max-width: 576px) {
@@ -6,8 +7,14 @@
     }
   } @else if $breakpoint == sm {
     //small devices (portarite phones,576px and up)
-    @media only screen and(min-width: 576px) {
-      @content;
+    @if $scope == "sm-md"{
+      @media only screen and (min-width: 576px) and (max-width: 768px){
+        @content;
+      }
+    }@else{
+      @media only screen and(min-width: 576px) {
+        @content;
+      }
     }
   } @else if $breakpoint == md {
     //medium devices (tablets ,768px and up)
@@ -28,6 +35,32 @@
     //xx-large devices (desktops ,1400px and up)
     @media only screen and(min-width: 1400px) {
       @content;
+    }
+  }
+}
+
+
+@mixin mobile-menu{
+  position: fixed;  
+  background-color: get-colors();
+  top: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  transition: 500ms;
+  &.show{
+    display: block;
+    top: 42px;
+    text-align: center;
+  }
+  & li{
+    padding: 2rem;
+    a{
+      color: white;
+      &.active{
+        color: black;
+      }
     }
   }
 }

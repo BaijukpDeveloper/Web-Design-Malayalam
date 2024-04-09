@@ -10,6 +10,7 @@
   scroll-margin-top: 50px;
 }
 
+@use "../abstracts/functions";
 /*fonts*/
 /*color shcema*/
 @use "../abstracts/variables";
@@ -1240,6 +1241,34 @@ p {
 }
 
 @media only screen and (max-width: 576px) {
+  .header .navbar-menu {
+    position: fixed;
+    background-color: #00B9E8;
+    top: -100%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .header .navbar-menu.show {
+    display: block;
+    top: 42px;
+    text-align: center;
+  }
+  .header .navbar-menu li {
+    padding: 2rem;
+  }
+  .header .navbar-menu li a {
+    color: white;
+  }
+  .header .navbar-menu li a.active {
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   .header .navbar-menu {
     position: fixed;
     background-color: #00B9E8;
