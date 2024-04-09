@@ -63,28 +63,11 @@
       /*mobile menu css start*/
       @include responsive(xs){
         // display: none;
-        position: fixed;  
-        background-color: get-colors();
-        top: -100%;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: 1;
-        transition: 500ms;
-        &.show{
-          display: block;
-          top: 42px;
-          text-align: center;
-        }
-        & li{
-          padding: 2rem;
-          a{
-            color: white;
-            &.active{
-              color: black;
-            }
-          }
-        }
+       
+        @include mobile-menu;
+      }
+      @include responsive(sm, "sm-md"){
+        @include mobile-menu;
       }
       /*mobile menu css end*/
       @include responsive(lg){
@@ -114,6 +97,15 @@
         }
       }
     }
+  }
+  &.fixed{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: -1px;
+    background-color: white;
+    box-shadow: 1px 1px 2px 0 #e6e6e6;
+    z-index: 9;
   }
 }
 /* header css end */
