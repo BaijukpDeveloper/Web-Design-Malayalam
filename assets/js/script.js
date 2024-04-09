@@ -1,23 +1,25 @@
 // seleting mobile menu icon
 const navToggler = document.querySelector('.hanberg-icon');
+const navEl = document.querySelectorAll('.navbar-menu-items>a');
+
 
 // adding action to mobile menu icon
-navToggler.addEventListener('click',() => {
+navToggler.addEventListener('click', changeMenuState);
 
-    // selecting mobile menu list
-    const headerMenu = document.querySelector('.navbar-menu');
+function changeMenuState(){
+// selecting mobile menu list
+const headerMenu = document.querySelector('.navbar-menu');
 
-    // selectiong mobile menu icons 
-    const navIcon = document.querySelectorAll('.navIcon');
-    // adding clicking action to mobile menu icon
-    headerMenu.classList.toggle('show')
-    
-    // moible icon show and hidden action
-    navIcon.forEach(icon=>{
-        icon.classList.toggle('hidden')
-    })
+// selectiong mobile menu icons 
+const navIcon = document.querySelectorAll('.navIcon');
+// adding clicking action to mobile menu icon
+headerMenu.classList.toggle('show')
+
+// moible icon show and hidden action
+navIcon.forEach(icon=>{
+    icon.classList.toggle('hidden')
 })
-
+}
 
 // window scrolling header effect
 const navbarFixed = () =>{
@@ -45,7 +47,8 @@ const navbarFixed = () =>{
 const setMenuActive = () =>{
     const sectionEl = document.querySelectorAll('section');
     console.log('section',sectionEl);
-    const navEl = document.querySelectorAll('.navbar-menu-items>a');
+    
+    console.log(navEl);
     console.log('nav element', navEl);
     window.addEventListener('scroll',() =>{
         let current = "";
@@ -69,5 +72,13 @@ const setMenuActive = () =>{
     
 };
 
+function onMenuClick(){
+    for (let i=0;i<navEl.length; i++){
+        navEl[i].addEventListener("click", changeMenuState);
+    }
+}
+
+
 navbarFixed();
 setMenuActive();
+onMenuClick();
